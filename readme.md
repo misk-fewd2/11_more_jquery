@@ -1,4 +1,4 @@
-# Lesson 09 - More jQuery
+# Lesson 11 - More jQuery
 
 In Lesson 9, we'll take stock of all the new stuff we've just learned with a challenging lab to start the class and then we'll go a little lighter and discuss jQuery chaining and real JS selectors.
 
