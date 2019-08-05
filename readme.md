@@ -25,6 +25,6 @@ By the end of this class, you will:
 * [Eloquent JavaScript - Chapter 3 on values](http://eloquentjavascript.net/03_functions.html)
 * [Codepens for Lesson 8](http://codepen.io/collection/XQbVKG/)
 
-##Assignments
+## Assignments
 * In Class: Codealongs, couple assignments
 * Homework: Think about your Final Project
