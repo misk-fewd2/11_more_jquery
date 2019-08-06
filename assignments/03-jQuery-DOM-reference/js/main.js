@@ -4,10 +4,14 @@
 // Using DOM transversal and chaining jQuery methods
 
 // .parent();
-$(".box-example-3").parent().css("background-color", "red");
+$(".box-example-3")
+  .parent()
+  .css("background-color", "red");
 
-// .child();
-$("#container-parent").children().css("background-color", "orange");
+// .children();
+$("#container-parent")
+  .children()
+  .css("background-color", "orange");
 
 // .siblings();
 // Note that if you use a selector that is present on all siblings, they all get the JS effect
@@ -20,11 +24,16 @@ $("#box-20").next().css({
   "background-color": "yellow",
   "color": "black"
 });
+$boxExampleArray = $('.box-example-5')
+console.log($boxExampleArray)
+$boxExampleArray.eq(3).css('background-color', 'blue');
 
 // .find()
 // You should try never to use find()
 // It's very expensive computationally because JS has to search your document to find the element
-$("#that-crazy-element").find("span").css("color", "red");
+$("#that-crazy-element")
+  .find("span")
+  .css("color", "red");
 
 
 
@@ -33,8 +42,12 @@ $("#that-crazy-element").find("span").css("color", "red");
 // But why does it jump to the top of the page like that when we click?
 // Anchor links that don't go anywhere by default go to the top of the page
 // ***How do we prevent that default behavior?***
-$("#pink-clicker").click(function () {
-  $("#container-parent-2").children().css("background-color", "pink");
+$("#pink-clicker").click(function (event) {
+  console.log(event);
+  $("#container-parent-2")
+    .children()
+    .css("background-color", "pink");
+  event.preventDefault()
 });
 
 // Use $(event).preventDefault() - it will stop the default event from propagating to the DOM
